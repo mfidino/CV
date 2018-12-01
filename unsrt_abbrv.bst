@@ -548,12 +548,14 @@ FUNCTION {article}
 { output.bibitem
   format.authors "author" output.check
   new.block
+  format.date "year" output.check
+  new.block
   format.title "title" output.check
   new.block
   crossref missing$
     { journal emphasize "journal" output.check
       format.vol.num.pages output
-      format.date "year" output.check
+      
     }
     { format.article.crossref output.nonnull
       format.pages output
@@ -648,6 +650,8 @@ FUNCTION {incollection}
 { output.bibitem
   format.authors "author" output.check
   new.block
+  format.date "year" output.check
+  new.block
   format.title "title" output.check
   new.block
   crossref missing$
@@ -659,7 +663,6 @@ FUNCTION {incollection}
       publisher "publisher" output.check
       address output
       format.edition output
-      format.date "year" output.check
     }
     { format.incoll.inproc.crossref output.nonnull
       format.chapter.pages output
@@ -773,12 +776,13 @@ FUNCTION {phdthesis}
 { output.bibitem
   format.authors "author" output.check
   new.block
+  format.date "year" output.check
+  new.block
   format.btitle "title" output.check
   new.block
   "PhD thesis" format.thesis.type output.nonnull
   school "school" output.check
   address output
-  format.date "year" output.check
   new.block
   note output
   fin.entry
