@@ -37,11 +37,28 @@ ENTRY
 
 INTEGERS { output.state before.all mid.sentence after.sentence after.block }
 
+FUNCTION {cv.author}
+{ "Fidino, M." } 
+
+FUNCTION {highlight}
+{ duplicate$ empty$
+      { pop$ "" }
+      { "\textcolor{red}{\textbf{" swap$ * "}}" * }
+   if$
+}
+
 FUNCTION {init.state.consts}
 { #0 'before.all :=
   #1 'mid.sentence :=
   #2 'after.sentence :=
   #3 'after.block :=
+}
+
+FUNCTION {highlight.if.cv.author}
+{ duplicate$ purify$ cv.author purify$ =
+    { highlight }
+    'skip$
+  if$
 }
 
 STRINGS { s t }
@@ -188,17 +205,18 @@ FUNCTION {format.names}
   s num.names$ 'numnames :=
   numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't :=
+    { s nameptr "{vv~}{ll}{, jj}{, f.}" format.name$ 't :=
+    highlight.if.cv.author
       nameptr #1 >
         { namesleft #1 >
-            { ", " * t * }
+            { ", " * t highlight.if.cv.author * }
             { numnames #2 >
                 { "," * }
                 'skip$
               if$
               t "others" =
                 { " et~al." * }
-                { " and " * t * }
+                { " and " * t highlight.if.cv.author * }
               if$
             }
           if$
@@ -206,7 +224,9 @@ FUNCTION {format.names}
         't
       if$
       nameptr #1 + 'nameptr :=
+      highlight.if.cv.author
       namesleft #1 - 'namesleft :=
+      highlight.if.cv.author
     }
   while$
 }
