@@ -1,10 +1,13 @@
 \documentclass[11pt,a4paper,nolmodern]{moderncv}
 
-\usepackage{bibentry}
-
 \usepackage{masonfidino}
 \usepackage{fontawesome}
 \usepackage[english]{babel}
+
+\addto\captionsenglish{\renewcommand\refname{Publications}}
+
+
+
 \linespread{0.9}
 % for some reason, lines take up a lot of space in itemize in English...
 \newenvironment{tightitemize}
@@ -41,7 +44,14 @@
 \tllabelcventry {2011}{2012}{2011--2012}{Research Intern}{Urban Wildlife Institute}{Lincoln Park Zoo}{Chicago, IL}{}
 \tllabelcventry {2009}{2010}{2009--2010}{Environmental Technician}{Environmental Assessment Services}{}{Richland, WA}{}
 
-\section*{Publications}
+\nocite{*}
+
+
+\bibliography{Fidino_publications.bib}
+\bibliographystyle{unsrt_abbrv}
+
+
+
 
 
 \end{document}
