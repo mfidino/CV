@@ -283,21 +283,11 @@ FUNCTION {n.dashify}
 }
 
 FUNCTION {format.date}
-{ year empty$
-    { month empty$
-        { "" }
-        { "there's a month but no year in " cite$ * warning$
-          month
-        }
-      if$
-    }
-    { month empty$
-        'year
-        { month " " * year * }
-      if$
-    }
-  if$
-}
+  { year empty$
+      { "" }
+      { year "(" swap$ * ")" *}
+    if$
+  }
 
 FUNCTION {format.btitle}
 { title emphasize
