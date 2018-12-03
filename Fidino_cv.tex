@@ -4,7 +4,7 @@
 \usepackage{fontawesome}
 \usepackage[english]{babel}
 
-\addto\captionsenglish{\renewcommand\refname{Publications}}
+\addto\captionsenglish{\renewcommand\refname{Publications \break \scriptsize \textcolor{black}{* denotes shared first authorship.}}}
 
 
 
@@ -31,25 +31,72 @@
 \maketitle
 
 \section{Education}
-\cventry {2013--2017}{Ph.D.}{Ecology and Evolution}
+\cventry {2013 -- 2017}{Ph.D.}{Ecology and Evolution}
 {University of Illinois at Chicago}{}{Advisors: Joel Brown, Seth Magle, Chris Whelan}
-\cventry{2005--2009}{B.S.}{Environmental Science}
+\cventry{2005 -- 2009}{B.S.}{Environmental Science}
 {Western Washington University}{}{Advisor: David Wallin}
 
-\section{Experience}
-\cventry{2017--Present}{Quantitative Ecologist}{Urban Wildlife Institute}
-{Lincoln Park Zoo}{Chicago, IL}{}
-\cventry {2015--2017}{Ecological Analyst}{Urban Wildlife Institute}{Lincoln Park Zoo}{Chicago, IL}{}
-\cventry{2014--Present}{Analytics Advisor}{Urban Wildlife Information Network}{}{}{}
-\cventry {2012--2015}{Coordinator of Wildlife Management}{Urban Wildlife Institute}{Lincoln Park Zoo}{Chicago, IL}{}
-\cventry{2011--2012}{Research Intern}{Urban Wildlife Institute}{Lincoln Park Zoo}{Chicago, IL}{}
-\cventry{2009--2010}{Environmental Technician}{Environmental Assessment Services}{}{Richland, WA}{}
+\section{Research Experience}
+\cventry{2017 -- Present}{Quantitative Ecologist}{Urban Wildlife Institute}{Lincoln Park Zoo}{Chicago, IL}{In this role I closely collaborate with conservation and science staff at the Lincoln Park Zoo to better manage and analyze data from a wide variety of sources, from touchscreen cognition tests for primates to nation-wide camera trapping projects. My own research in this position primarily focuses on developing new tools and techniques that better incorporate a species natural history into a statistical model and help address basic and applied questions related to how species respond to habitat fragmentation.}
+\cventry {2015 -- 2017}{Ecological Analyst}{Urban Wildlife Institute}{Lincoln Park Zoo}{Chicago, IL}{In this role I work to develop techniques to better manage and analyze ecological data and assist other science centers across the Lincoln Park Zoo with statistical analyses, data management, and computer programming. In this role I also developed statistics and computer programming workshops for staff. Finally, I helped initiate a large-scale citizen science project, Chicago Wildlife Watch (\httplink{www.chicagowildlifewatch.org}) and have written extensive software to verify and upload data to the project.}
+\cventry{2014 -- Present}{Analytics Advisor}{Urban Wildlife Information Network}{}{}{The Urban Wildlife Information Network (UWIN) is the world's first systematic multi-city urban wildlife monitoring network. To facilitate the collection and analysis of these data I have developed SQL databases to store large amounts of camera trapping data and an R package for UWIN partners to easily query and analyze their data. Furthermore, I work with partners in over 17 cities to answer any database or analysis question they may have.}
+\cventry {2012 -- 2015}{Coordinator of Wildlife Management}{Urban Wildlife Institute}{Lincoln Park Zoo}{Chicago, IL}{Led research of wildlife on zoo grounds, which included daily avian point counts, tracking relocated turtles in a newly restored pond habitat, on grounds rabbit management, arthropod surveys, and monitoring a nesting colony of state-endangered Black-crowned Night Herons (\textit{Nycticorax nycticorax}). To do all of this work, I managed and trained teams of interns each year, mentored them on urban ecology, and helped them present their work to their peers at the Lincoln Park Zoo. Additionally, I collaborated extensively with the Lincoln Park Zoo's education department on numerous projects to educate zoo visitors on wildlife conservation efforts throughout Chicago. }
+\cventry{2011 -- 2012}{Research Intern}{Urban Wildlife Institute}{Lincoln Park Zoo}{Chicago, IL}{Aided with field work and data entry for the Urban Wildlife Institute's biodiversity monitoring survey, helped with research on zoo grounds, and created year-end permit reports. }
+\cventry{2009 -- 2010}{Environmental Technician}{Environmental Assessment Services}{}{Richland, WA}{Assisted with numerous biological research projects at the Hanford superfund site.}
 
 \nocite{*}
 
+\bibliography{Fidino_publications}
 
-\bibliography{Fidino_publications.bib}
 \bibliographystyle{unsrt_abbrv}
+
+
+\section{Selected Scientific Presentations}
+\cvitem{2018}{Advancing urban wildlife knowledge through a multi-city collaboration. \break The Wildlife Society. Cincinnati, Ohio.}
+\cvitem{---}{Long-term declines of a highly interactive species. Society for Conservation Biology. Toronto, Ontario. }
+\cvitem{---}{Long-term declines of a highly interactive species. International Association for Landscape Ecology. Chicago, Illinois. }
+\cvitem{2017}{Using Fourier series to predict periodic patterns in dynamic occupancy models. \break Ecological Society of America. Portland, Oregon.}
+\cvitem{---}{Quantifying the structural and functional connectivity of habitat patches for Chicago area mesocarnivores. International Urban Wildlife Conference. San Diego, California.}
+\cvitem{2016}{A Bayesian approach to incorporate patterns of co-occurrence into multi-species occupancy models. Society for Conservation Biology. Madison, Wisconsin.}
+\cvitem{2015}{Mesocarnivore dynamics in a highly fragmented, yet highly permeable urban landscape. Ecological Society of America. Baltimore, Maryland.}
+\cvitem{2014}{Habitat dynamics of the Virginia opossum (\textit{Didelphis virginiana}) in a highly urban landscape. The Wildlife Society. Pittsburg, Pennsylvania.}
+
+\section{Selected Invited Presentations}
+\cvitem{2018}{Advancing urban wildlife knowledge through a multi-city collaboration. \break International workshop on biodiveristy and the urban-rural interface. Linde, Germany.}
+\cvitem{---}{Urban wildlife through space and time. Seminar series at Butler University. Indianapolis, Indiana.}
+\cvitem{2016}{A historical analysis of bird species diversity in Lincoln Park, Chicago during spring migration. Seminar series for the Fort Dearborn Audubon Society. Chicago, Illinois.}
+\cvitem{2014}{A review of bird count methods. Chicago Audubon Society. Chicago, Illinois.}
+
+
+
+\section{Grants and Awards}
+\cvitem{\$600}{\textbf{The American Bluebird Society} -- Assessing the nest success of urban cavity nesting birds. }
+
+\section{Teaching Experience}
+\cvitem{2017}{\textbf{Software Carpentry course on R programming:} Assisted with course held at University of Illinois at Chicago.}
+\cvitem{2016 -- Present}{\textbf{R programming and occupancy modeling:} Developed a two-day workshop to teach students, faculty and new partners to the Urban Wildlife Information Network the basics of R programming and how to model detection/non-detection data collected via camera trapping.}
+\cvitem{2016}{\textbf{Workshop on generalized linear models, power analysis, and simulations in R:} Developed workshop to teach Lincoln Park Zoo staff on basics of generalized linear models and how to simulate data in R.}
+
+\newpage
+
+\section{Reviewer}
+\cvitem{}{Biological Conservation}
+\cvitem{}{Canadian Journal of Zoology}
+\cvitem{}{Ecological Applications}
+\cvitem{}{Urban Ecosystems}
+\cvitem{}{The Wildlife Society Bulletin}
+
+\section{Service and Outreach}
+\cvitem{}{Ph.D. Committee member for Anna Kase at University of South Dakota. \break Thesis topic: False map turtle (\textit{Graptemys pseudogeographica}) abundance and habitat utilization in the Missouri River, South Dakota.  }
+
+\section{Academic Organizations}
+\cvitem{2015 -- Present}{Ecological Society of America}
+\cvitem{2017 -- Present}{Society for Conservation Biology}
+\cvitem{2014 -- Present}{The Wildlife Society}
+
+
+
+
 
 
 
