@@ -10,3 +10,5 @@ If you want to use this layout for your own purposes there are few changes you w
 - Line 7 in `Fidino_cv.tex` is what I changed the bibliography title to. If you do not need any extra notes as I did you can simplify this to just be "Publications"
 - Update with your own personal information on lines 21 - 24 of `Fidino_cv.tex`
 - Write your CV with modern style.
+
+<div style="text-align:center"><img src ="Raccoon.png" /></div>
