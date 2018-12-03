@@ -9,4 +9,4 @@ If you want to use this layout for your own purposes there are few changes you w
 - I call `masonfidino.sty` on line 3 of `Fidino_cv.tex`. If you change that file name update here as well.
 - Line 7 in `Fidino_cv.tex` is what I changed the bibliography title to. If you do not need any extra notes as I did you can simplify this to just be "Publications"
 - Update with your own personal information on lines 21 - 24 of `Fidino_cv.tex`
--Write your CV with modern style.
+- Write your CV with modern style.
