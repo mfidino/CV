@@ -11,4 +11,4 @@ If you want to use this layout for your own purposes there are few changes you w
 - Update with your own personal information on lines 21 - 24 of `Fidino_cv.tex`
 - Write your CV with modern style.
 
-<div align="center"><img width="100" height="auto" src ="Raccoon.png" /></div>
+<div align="center"><img width="100" height="auto" src="Raccoon.png" alt="A line drawing of a raccoon standing up and waving that Mason made." /></div>
