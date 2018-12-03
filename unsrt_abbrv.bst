@@ -43,7 +43,7 @@ FUNCTION {cv.author}
 FUNCTION {highlight}
 { duplicate$ empty$
       { pop$ "" }
-      { "\textcolor{red}{\textbf{" swap$ * "}}" * }
+      { "\textcolor{black}{\textbf{" swap$ * "}}" * }
    if$
 }
 
