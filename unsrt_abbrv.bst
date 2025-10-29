@@ -115,6 +115,11 @@ FUNCTION {fin.entry}
   newline$
 }
 
+FUNCTION {fin.entry.no.period}
+{ write$
+  newline$
+}
+
 FUNCTION {new.block}
 { output.state before.all =
     'skip$
@@ -762,13 +767,13 @@ FUNCTION {misc}
 { output.bibitem
   format.authors output
   title howpublished new.block.checkb
-  format.title output
+  format.title  output
   howpublished new.block.checka
   howpublished output
   format.date output
   new.block
   note output
-  fin.entry
+  fin.entry.no.period
   empty.misc.check
 }
 
